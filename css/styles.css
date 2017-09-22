@@ -21,6 +21,18 @@
 .sidebar {
   background-color: #B5B6E1;
   float: left;
+  width: 30% margin: auto;
+  padding: 30px;
+  padding-bottom: 300px;
+}
+
+.palecolor {
+  color: #8D94CF;
+}
+
+.main {
   margin: auto;
   padding: 30px;
+  float: right;
+  width: 70%;
 }
