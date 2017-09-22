@@ -1,38 +1,38 @@
 // business logic
-var number = parseInt($("input#year").val());
 var output = [];
 
-function count(number) {
-
+function play(number) {
+  // count up to number
   for (var i = 1; i < number; i++) {
-    output.push(exceptions(i));
+    output.push(i);
   }
-};
-
-function exceptions(number) {
-  if (number % 3 === 0 && number % 5 === 0) {
-    return "pingpong";
-  } else if (number % 5 === 0) {
-    return "pong";
-  } else if (number % 3 === 0) {
-    return "ping";
+  // Exceptions
+  // if number is divisible by 15
+  if (number % 3 == 0 && number % 5 == 0) {
+    output.push("pingpong");
+  }
+  // if number is divisible by 5
+  else if (number % 5 == 0) {
+    output.push("pong");
+  }
+  // if number is divisible by 3
+  else if (number % 3 == 0) {
+    output.push("ping");
   } else {
-    return number;
+    output.push(i);
   }
+  // return output;
 };
-
-
-
-
-
-
 
 // user interface logic
 $(document).ready(function() {
-  $("form#number").submit(function(event) {
+  $("#submit-button").click(function(event) {
     event.preventDefault();
 
-    $("#result").text(output);
+    var number = parseInt($("input#number").val());
+    output.forEach(function(element) {
+      $("#result").append("<li>" + element + "</li>");
+    });
     $(".result").show();
   });
 });

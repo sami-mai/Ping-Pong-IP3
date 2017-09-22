@@ -4,7 +4,6 @@ html {
 
 .result {
   display: none;
-  background-image: url("../img/pingpongplay.png");
 }
 
 .banner {
@@ -30,7 +29,8 @@ html {
 .sidebar {
   background-color: #B5B6E1;
   float: left;
-  width: 30% margin: auto;
+  width: 30%;
+  margin: auto;
   padding: 30px;
   padding-bottom: 300px;
 }
@@ -53,4 +53,9 @@ html {
 
 .btn {
   background-color: #9AACCD;
+}
+
+footer {
+  opacity: 0.3;
+  display: block;
 }
