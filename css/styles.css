@@ -2,8 +2,9 @@ html {
   background-color: #C6D9E3;
 }
 
-#result {
+.result {
   display: none;
+  background-image: url("../img/pingpongplay.png");
 }
 
 .banner {

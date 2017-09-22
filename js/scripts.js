@@ -1,8 +1,12 @@
 // business logic
 var number = parseInt($("input#year").val());
+var output = [];
 
-function count() {
+function count(number) {
 
+  for (var i = 1; i < number; i++) {
+    output.push(exceptions(i));
+  }
 };
 
 function exceptions(number) {
@@ -28,6 +32,7 @@ $(document).ready(function() {
   $("form#number").submit(function(event) {
     event.preventDefault();
 
-    $("#result").show();
+    $("#result").text(output);
+    $(".result").show();
   });
 });
