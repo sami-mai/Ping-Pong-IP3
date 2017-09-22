@@ -1,13 +1,14 @@
 .banner {
   background-image: url("../img/blue-ping-pong-paddle.jpg");
-  padding: 110px;
+  padding: 45px;
 }
 
-h1 {
+.header {
   text-align: center;
-  font-size: 60;
+  font-size: 100px;
   font-family: sans-serif;
   color: black;
+  padding: 0px;
 }
 
 #logo {
@@ -15,4 +16,11 @@ h1 {
   padding: 30px;
   display: block;
   margin: auto;
+}
+
+.sidebar {
+  background-color: #B5B6E1;
+  float: left;
+  margin: auto;
+  padding: 30px;
 }
