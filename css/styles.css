@@ -1,3 +1,11 @@
+html {
+  background-color: #C6D9E3;
+}
+
+#result {
+  display: none;
+}
+
 .banner {
   background-image: url("../img/blue-ping-pong-paddle.jpg");
   padding: 45px;
@@ -35,4 +43,13 @@
   padding: 30px;
   float: right;
   width: 70%;
+  background-color: #C6D9E3;
+}
+
+.main-form {
+  padding-bottom: 300px;
+}
+
+.btn {
+  background-color: #9AACCD;
 }
